@@ -25,4 +25,4 @@ jobs:
               run: dotnet build ./TimeServerApp.sln --configuration Release --no-restore   
 
             - name: Publish
-              run: publish  ./TimeServerApp.sln --configuration Release --no-build
+              run: dotnet publish  ./TimeServerApp.sln --configuration Release --no-build
