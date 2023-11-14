@@ -19,10 +19,10 @@ jobs:
                 dotnet-version: '6.0.x' 
             
             - name: Restore
-              run: dotnet restore ./UTCServerFunctionApp.sln
+              run: dotnet restore ./TimeServerApp.sln
               
             - name: Build
-              run: dotnet build ./UTCServerFunctionApp.sln --configuration Release --no-restore   
+              run: dotnet build ./TimeServerApp.sln --configuration Release --no-restore   
 
             - name: Publish
-              run: publish  ./UTCServerFunctionApp.sln --configuration Release --no-build
+              run: publish  ./TimeServerApp.sln --configuration Release --no-build
